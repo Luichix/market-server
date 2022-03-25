@@ -1,0 +1,39 @@
+{
+  "name": "market-store",
+  "version": "1.0.0",
+  "description": "Servidor Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "cross-env NODE-ENV=development nodemon index.js",
+    "test": "cross-env NODE_ENV= test jest --verbose --runInBand",
+    "lint": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luichix/market-server.git"
+  },
+  "author": "Luichix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luichix/market-server/issues"
+  },
+  "homepage": "https://github.com/Luichix/market-server#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cloudinary": "^1.29.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-async-error": "^0.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.8"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^8.11.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  }
+}
